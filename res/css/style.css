@@ -9,3 +9,15 @@ body {
     margin: 10px auto;
     border: 1px solid gray;
 }
+
+.color0 {
+    background-color: indianred;
+}
+
+.color1 {
+    background-color: #a2d6ec;
+}
+
+.color2 {
+    background-color: darkseagreen;
+}

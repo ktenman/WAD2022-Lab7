@@ -5,13 +5,14 @@ window.onload = function () {
         .then((response) => response.json())
         .then(json => {
             console.log(json);
-            for (const jsonElement of json) {
+            for (let i = 0; i < json.length; i++) {
                 let divElement = document.createElement("div");
                 let title = document.createElement("h3");
                 let paragraphElement = document.createElement("p");
-                divElement.className = "post"
-                title.innerHTML = jsonElement.title
-                paragraphElement.innerHTML = jsonElement.body
+                let suffix = i % 3
+                divElement.className = "post color" + suffix
+                title.innerHTML = json[i].title
+                paragraphElement.innerHTML = json[i].body
                 divElement.appendChild(title)
                 divElement.appendChild(paragraphElement)
                 document.body.appendChild(divElement)
