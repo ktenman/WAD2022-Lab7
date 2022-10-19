@@ -1,7 +1,7 @@
 window.onload = function () {
 
 
-    fetch('https://jsonplaceholder.typicode.com/posts')
+    fetch('res/json/myjson.json')
         .then((response) => response.json())
         .then(json => {
             console.log(json);
